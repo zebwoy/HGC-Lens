@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/HGC-Lens/static/css/main.2f73dc64.css",
+    "main.js": "/HGC-Lens/static/js/main.3c37688c.js",
+    "index.html": "/HGC-Lens/index.html",
+    "main.2f73dc64.css.map": "/HGC-Lens/static/css/main.2f73dc64.css.map",
+    "main.3c37688c.js.map": "/HGC-Lens/static/js/main.3c37688c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f73dc64.css",
+    "static/js/main.3c37688c.js"
+  ]
+}
