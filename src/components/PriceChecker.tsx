@@ -8,21 +8,21 @@ const PLATFORMS = [
 ];
 
 const TIME_OPTIONS = [
-  { value: 0.5, label: 'Half an hour' },
+  { value: 0.5, label: '30 minutes' },
   { value: 1, label: '1 hour' },
-  { value: 1.5, label: '1 and a half hours' },
+  { value: 1.5, label: '1½ hours' },
   { value: 2, label: '2 hours' },
-  { value: 2.5, label: '2 and a half hours' },
+  { value: 2.5, label: '2½ hours' },
   { value: 3, label: '3 hours' },
-  { value: 3.5, label: '3 and a half hours' },
+  { value: 3.5, label: '3½ hours' },
   { value: 4, label: '4 hours' },
-  { value: 4.5, label: '4 and a half hours' },
+  { value: 4.5, label: '4½ hours' },
   { value: 5, label: '5 hours' },
-  { value: 5.5, label: '5 and a half hours' },
+  { value: 5.5, label: '5½ hours' },
   { value: 6, label: '6 hours' },
-  { value: 6.5, label: '6 and a half hours' },
+  { value: 6.5, label: '6½ hours' },
   { value: 7, label: '7 hours' },
-  { value: 7.5, label: '7 and a half hours' },
+  { value: 7.5, label: '7½ hours' },
   { value: 8, label: '8 hours' },
 ];
 
