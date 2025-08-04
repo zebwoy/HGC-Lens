@@ -1,0 +1,141 @@
+.direction {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.direction-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.direction-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.direction-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.direction-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.ar-placeholder {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 20px;
+  padding: 3rem;
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.ar-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.ar-placeholder h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ar-placeholder p {
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+.ar-placeholder ul {
+  text-align: left;
+  margin-bottom: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.ar-placeholder li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.95rem;
+}
+
+.ar-placeholder li:last-child {
+  border-bottom: none;
+}
+
+.coming-soon {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+.coming-soon span {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .direction {
+    padding: 1rem;
+  }
+  
+  .direction-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .ar-placeholder {
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+  
+  .ar-icon {
+    font-size: 3rem;
+  }
+  
+  .ar-placeholder h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .direction {
+    padding: 0.75rem;
+  }
+  
+  .direction-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .ar-placeholder {
+    padding: 1.5rem;
+  }
+  
+  .ar-icon {
+    font-size: 2.5rem;
+  }
+  
+  .ar-placeholder h3 {
+    font-size: 1.2rem;
+  }
+  
+  .coming-soon {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .coming-soon span {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,261 @@
+.price-checker {
+  padding: 2rem;
+  max-width: 100%;
+}
+
+.price-checker-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.price-checker-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.price-checker-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.price-checker-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-section {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.form-section h3 {
+  margin-bottom: 1rem;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #495057;
+  font-size: 0.9rem;
+}
+
+.form-group input[type="checkbox"] {
+  margin-right: 0.5rem;
+  width: 18px;
+  height: 18px;
+  accent-color: #667eea;
+}
+
+.form-group label:has(input[type="checkbox"]) {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.form-note {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #adb5bd;
+}
+
+.price-result {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 15px;
+  padding: 2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+.price-breakdown {
+  margin-bottom: 1.5rem;
+}
+
+.price-breakdown h3 {
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.breakdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.breakdown-item:last-of-type {
+  border-bottom: none;
+}
+
+.breakdown-item.total {
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+  padding-top: 1rem;
+  margin-top: 0.5rem;
+}
+
+.price-actions {
+  text-align: center;
+}
+
+.save-price-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.save-price-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.price-history {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid #e9ecef;
+}
+
+.price-history h3 {
+  margin-bottom: 1rem;
+  color: #495057;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  font-size: 0.9rem;
+}
+
+.history-item span:first-child {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.history-item span:last-child {
+  color: #667eea;
+  font-weight: 600;
+}
+
+/* Mobile responsive design */
+@media (max-width: 768px) {
+  .price-checker {
+    padding: 1rem;
+  }
+  
+  .price-checker-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .form-section {
+    padding: 1rem;
+  }
+  
+  .price-result {
+    padding: 1.5rem;
+  }
+  
+  .breakdown-item {
+    font-size: 0.9rem;
+  }
+  
+  .breakdown-item.total {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .price-checker {
+    padding: 0.75rem;
+  }
+  
+  .price-checker-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .form-section {
+    padding: 0.75rem;
+  }
+  
+  .price-result {
+    padding: 1rem;
+  }
+  
+  .save-price-btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+} 
